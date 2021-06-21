@@ -14,7 +14,7 @@ defaults:
     scope:
       path: "" # empty string for all files
     values:
-      title: DangKhai
+      title: Home
 
 description: Stylish Jekyll Theme
 author:
@@ -22,7 +22,7 @@ author:
   email: dangkhaibbt@gmail.com
   github: DangKhai
   twitter: h3ll38
-  bio: Your stylish, minimalist theme!
+  bio: Security engineer,CTFer !
 
 rss_path: feed.xml
 categories_path: categories.html
