@@ -3,7 +3,7 @@ layout: post
 title: LIFECYCLE of FASTJSON
 categories: [Research]
 tags: [FastJson,JAVA]
-description: Something about FastJson
+description: Something about FastJson lib
 ---
 
 ![mapjson](https://dangkhai0x21.github.io/assets/media/forpost/lifecycle-fast/jsonmapjson.PNG)
