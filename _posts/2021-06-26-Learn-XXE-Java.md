@@ -1,6 +1,6 @@
 ---
 layout: post
-title: CVE-2021-29447_XXE ON WORDPRESS VIA ID3 LIB
+title: LEARN XXE JAVA
 categories: [Research]
 tags: [XXE,JAVA]
 description: Something about XXE java
