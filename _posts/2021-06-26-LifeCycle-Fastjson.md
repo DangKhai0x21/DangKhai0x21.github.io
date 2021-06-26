@@ -6,7 +6,7 @@ tags: [FastJson,JAVA]
 description: Something about FastJson lib
 ---
 
-![mapjson](https://dangkhai0x21.github.io/assets/media/forpost/lifecycle-fast/jsonmapjson.PNG)
+![mapjson](https://dangkhai0x21.github.io/assets/media/forpost/lifecycle-fastjson/mapjson.PNG)
 
 ### Brief intro:
 
