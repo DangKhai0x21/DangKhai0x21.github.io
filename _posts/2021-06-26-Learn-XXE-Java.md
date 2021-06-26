@@ -79,7 +79,7 @@ An external entity is one that is defined locally within a DTD or external DTD.
 
 pom.xml
 
-```{% highlight xml %}
+{% highlight java %}
 <?xml version="1.0" encoding="UTF-8"?>
 <project xmlns="http://maven.apache.org/POM/4.0.0"
          xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
@@ -113,7 +113,7 @@ pom.xml
 
 features
 
-```{% highlight java %}
+{% highlight java %}
 public interface features {
     String SECURE_PROCESSING = "http://javax.xml.XMLConstants/feature/secure-processing";
     String EXTERNAL_GENERAL_ENTITIES = "http://xml.org/sax/features/external-general-entities";
@@ -207,14 +207,14 @@ public interface Payloads {
 
 ### Features
 
-```java
+{% highlight java %}
     /**
      * The SAX feature name for secure processing. Turning on this feature
      * might result in a parser rejecting XML documents that are considered
      * "insecure" (having a potential for DOS attacks, for example). The
      * Android XML parsing implementation currently ignores this feature.  
      */
-```
+{% endhighlight %}
 
 ```
 http://javax.xml.XMLConstants/feature/secure-processing - true
@@ -246,11 +246,13 @@ http://apache.org/xml/features/nonvalidating/load-external-dtd - false
 
 > load dtd entity is prohibited
 
+
 ### Some libs parse XML
 
 ####  DocumentBuilder
 
-```{% highlight java %}
+
+{% highlight java %}
 package libs;
 
 import org.w3c.dom.Document;
@@ -410,3 +412,7 @@ Ans
 ```
 [2] CDATA have a mission like ` comment `
 ```
+
+### CONCLUDE
+
+Most libraries use the same features, so just knowing the characteristics of each feature will be able to perform bypass for each case.
