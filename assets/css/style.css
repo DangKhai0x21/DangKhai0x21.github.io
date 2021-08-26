@@ -8,7 +8,7 @@ body{
 	position: fixed;
 	top: 0px;
 	padding-top: 15%;
-	background-color: #9597bde6;
+	background-color: #c9d6e8e6;
 	color: #fff;
 }
 
@@ -111,8 +111,8 @@ article {
 	padding: 0 5% 0;
 }
 
-article.home div a, article.home pre a { color: #9597bde6; }
-article.home div a:hover, article.home pre a:hover { color: #9597bde6; text-decoration: none; }
+article.home div a, article.home pre a { color: #c9d6e8e6; }
+article.home div a:hover, article.home pre a:hover { color: #c9d6e8e6; text-decoration: none; }
 article img { max-width: 100%; }
 
 h1,h2,h3,h4,h5,h6 { font-family: 'Ubuntu', sans-serif; }
