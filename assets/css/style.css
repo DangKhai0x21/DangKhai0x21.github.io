@@ -115,14 +115,14 @@ article.home div a, article.home pre a { color: #c9d6e8e6; }
 article.home div a:hover, article.home pre a:hover { color: #c9d6e8e6; text-decoration: none; }
 article img { max-width: 100%; }
 
-h1,h2,h3,h4,h5,h6 { font-family: 'Ubuntu', sans-serif; }
+h1,h2,h3,h4,h5,h6 { font-family: Candara, Calibri, Segoe, "Segoe UI", Optima, Arial, sans-serif; }
 article.home h1,
 article.home h2,
 article.home h3,
 article.home h4,
 article.home h5,
 article.home h6 {
-	font-family: 'Ubuntu', sans-serif;
+	font-family: Candara, Calibri, Segoe, "Segoe UI", Optima, Arial, sans-serif;
 	color: #f2756a;
 }
 
