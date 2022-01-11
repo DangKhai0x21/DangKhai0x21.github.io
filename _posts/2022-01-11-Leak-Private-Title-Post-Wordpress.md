@@ -87,8 +87,8 @@ Chúc mừng năm mới 🎉🎉🎉🎉🎉🎉🎉🎉🎉🎉🎉🎉🎉🎉
 
 References:
 
-[1] https://www.hixie.ch/specs/pingback/pingback
+[1] [https://www.hixie.ch/specs/pingback/pingback](https://www.hixie.ch/specs/pingback/pingback)
 
-[2] https://github.com/WordPress/wordpress-develop/security/advisories/GHSA-6676-cqfm-gw84
+[2] [https://github.com/WordPress/wordpress-develop/security/advisories/GHSA-6676-cqfm-gw84](https://github.com/WordPress/wordpress-develop/security/advisories/GHSA-6676-cqfm-gw84)
 
-[3] https://www.w3resource.com/mysql/string-functions/mysql-rlike-function.php
+[3] [https://www.w3resource.com/mysql/string-functions/mysql-rlike-function.php](https://www.w3resource.com/mysql/string-functions/mysql-rlike-function.php)
