@@ -54,7 +54,6 @@ Accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0
 Accept-Language: en-US,en;q=0.5
 Accept-Encoding: gzip, deflate
 Connection: close
-Cookie: wp-settings-time-1=1610339729; wordpress_test_cookie=WP+Cookie+check; wordpress_logged_in_8bcaf7c55080a17ee3f073d5ffc5ebe6=khaind2%7C1611549328%7CswqbpHOqzhq5b6pKMiqlGSayxOufcvW1XyjuuUOj9yA%7C6ebc767d888826acf6a7c7b1a241c2f22d15799aeb573786460ca4728e90fb31; XDEBUG_SESSION=10918
 Upgrade-Insecure-Requests: 1
 Content-Length: 324
 
