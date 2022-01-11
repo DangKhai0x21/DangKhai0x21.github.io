@@ -10,7 +10,7 @@ Nhân tiện vài hôm nay vẫn còn nóng hổi vụ [SQLi](https://github.com
 
 Đối với wordpress, từ khoá xmlrpc cũng không còn xa lạ nữa. Có một số tác động bảo mật phổ biến liên quan đến từ khoá này như [DoS](https://hackerone.com/reports/752073), brute force,... Và phương pháp giảm nhẹ mà nhà cung cấp đưa vào sản phẩm của họ là khuyên người dùng nên [tắt](https://mediatemple.net/community/products/dv/360048950192/how-to-disable-xmlrpc.php-for-wordpress) chức năng này nếu không cần sử dụng đến. Và thứ mình trình bày trong bài viết này cũng liên quan đến nó.
 
-Cụ thể là phương thức [pingback_ping()](https://github.com/WordPress/WordPress/blob/master/wp-includes/class-wp-xmlrpc-server.php#L6828), phương thức này có nhiệm vụ chính là kiểm tra sự tồn tại của một bài đăng(private + public) thông qua các tham số`title` được gửi lên từ người dùng. Cách kiểm tra nó như sau:
+Cụ thể là phương thức [pingback_ping()](https://github.com/WordPress/WordPress/blob/master/wp-includes/class-wp-xmlrpc-server.php#L6828), phương thức này có nhiệm vụ chính là kiểm tra sự tồn tại của một bài đăng(private + public) thông qua tham số`title` được gửi lên từ người dùng. Cách kiểm tra nó như sau:
 
 > $sql     = $wpdb->prepare( "SELECT ID FROM $wpdb->posts WHERE post_title RLIKE %s", $title );
 
