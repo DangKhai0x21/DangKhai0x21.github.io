@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Leak private title post wordpress via xmlrpc wordpress
+title: Leak private title post via xmlrpc in wordpress
 categories: [Research]
 tags: [WORDPRESS]
 description: Tấn công vét cạn tiêu đề bài đăng riêng tư trên wordpress thông qua xmlrpc.
