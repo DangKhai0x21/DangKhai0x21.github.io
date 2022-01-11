@@ -16,7 +16,7 @@ Cụ thể là phương thức [pingback_ping()](https://github.com/WordPress/Wo
 
 Không phải bị SQLi nữa đâu =)) Cái cần chú ý là câu truy vấn là sử dụng [RLIKE](https://www.w3resource.com/mysql/string-functions/mysql-rlike-function.php). Trong trường hợp này, cũng không biết nó là tính năng hay lỗi nữa. Nhưng vì cách sử dụng này đôi khi lại cho phép kẻ tấn công có thể thực hiện tấn công vét cạn để tìm ra tiêu đề của các bài đăng riêng tư. Mình sẽ nói sơ lại mình luồng khai thác như sau.
 
-https://github.com/WordPress/WordPress/blob/master/wp-includes/class-wp-xmlrpc-server.php#L6867-L6887
+[https://github.com/WordPress/WordPress/blob/master/wp-includes/class-wp-xmlrpc-server.php#L6867-L6887](https://github.com/WordPress/WordPress/blob/master/wp-includes/class-wp-xmlrpc-server.php#L6867-L6887)
 
 ![](https://i.imgur.com/l9ApgGM.png)
 
@@ -24,21 +24,21 @@ Sau khi qua các bước kiểm tra tính hợp lệ của tham số truyền l�
 
 > http://localhost:81/wp/p/a=11#title
 
+[https://github.com/WordPress/WordPress/blob/master/wp-includes/class-wp-xmlrpc-server.php#L6888](https://github.com/WordPress/WordPress/blob/master/wp-includes/class-wp-xmlrpc-server.php#L6888)
 
-https://github.com/WordPress/WordPress/blob/master/wp-includes/class-wp-xmlrpc-server.php#L6888
 ![](https://i.imgur.com/jRO5Rsh.png)
 
 Đến dòng [#6888](https://github.com/WordPress/WordPress/blob/master/wp-includes/class-wp-xmlrpc-server.php#L6888) thì chính giá trị `fragment` sẽ được lấy làm tham số so sánh với cột `title` bởi RLIKE. Giả sử cứ lần lượt vét cạn 36 lần tương đương với 26 chữ cái + 10 kí tự số cho một kí tự của tiêu đề bài đăng thì việc vét cạn này vẫn có xác xuất thành công rất cao. Chỉ có một điểm khó trong hướng khai thác này là `fragment` đã bị bộ lọc chỉ cho phép các kí tự thuộc phạm vị `[^a-z0-9]`. Điều này dẫn đến không thể chèn các kí tự như `%,_,^,...` để giảm thiểu tối đa các trường hợp vét cạn. Vậy nên trong lần vét cạn đầu tiên, kết quả có được có thể chỉ là một phần của tiêu đề bài đăng thôi. Cần hard-core hơn để có được một kết quả hoàn chỉnh.
 
 
 Tiếp theo nếu trường hợp `ID` không tồn tại sau khi thực hiện truy vấn thì ứng dụng lập tức phản hồi thông báo mà không có **time delay**.
+[https://github.com/WordPress/WordPress/blob/master/wp-includes/class-wp-xmlrpc-server.php#L6890-L6893](https://github.com/WordPress/WordPress/blob/master/wp-includes/class-wp-xmlrpc-server.php#L6890-L6893)
 
-https://github.com/WordPress/WordPress/blob/master/wp-includes/class-wp-xmlrpc-server.php#L6890-L6893
 ![](https://i.imgur.com/Q0CgUHj.png)
 
 Nếu vượt qua hết các bộ lọc trên thì ứng dụng sẽ thực hiện `sleep(1)` sau đó phản hồi lại kết quả.
 
-https://github.com/WordPress/WordPress/blob/master/wp-includes/class-wp-xmlrpc-server.php#L6922
+[https://github.com/WordPress/WordPress/blob/master/wp-includes/class-wp-xmlrpc-server.php#L6922](https://github.com/WordPress/WordPress/blob/master/wp-includes/class-wp-xmlrpc-server.php#L6922)
 
 ![](https://i.imgur.com/U5ld8Oi.png)
 
