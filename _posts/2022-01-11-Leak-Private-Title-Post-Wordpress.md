@@ -2,7 +2,7 @@
 layout: post
 title: Leak private title post wordpress via xmlrpc wordpress
 categories: [Research]
-tags: [APACHE,CVE]
+tags: [WORDPRESS]
 description: Tấn công vét cạn tiêu đề bài đăng riêng tư trên wordpress thông qua xmlrpc.
 ---
 
